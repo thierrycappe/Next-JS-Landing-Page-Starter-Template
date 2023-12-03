@@ -12,7 +12,8 @@
         "singleQuote": true,
         "endOfLine": "auto"
       }
-    ]
+    ],
+    "no-use-before-define": ["error", {"functions": false, "classes": false, "variables": false }] // Allow to use function before it's defined
   },
   "overrides": [
     // Configuration for TypeScript files
