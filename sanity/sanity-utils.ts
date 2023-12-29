@@ -1,7 +1,8 @@
 import ImageUrlBuilder from '@sanity/image-url';
 import type { SanityImageSource } from '@sanity/image-url/lib/types/types';
 import { createClient, groq } from 'next-sanity';
-import clientConfig from 'sanity/config/client-config';
+
+import clientConfig from './config/client-config';
 
 export async function getPosts() {
   return createClient(clientConfig).fetch(groq`*[_type == "post"] {
