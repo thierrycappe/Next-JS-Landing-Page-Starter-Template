@@ -1,8 +1,7 @@
 import ImageUrlBuilder from '@sanity/image-url';
 import type { SanityImageSource } from '@sanity/image-url/lib/types/types';
 import { createClient, groq } from 'next-sanity';
-
-import clientConfig from './config/client-config';
+import clientConfig from 'sanity/config/client-config';
 
 export async function getPosts() {
   return createClient(clientConfig).fetch(groq`*[_type == "post"] {
@@ -47,5 +46,10 @@ export async function getPost(slug: string) {
 }
 
 export function imageBuilder(source: SanityImageSource) {
-  return ImageUrlBuilder(clientConfig).image(source);
+  const builderConfig = {
+    projectId: clientConfig.projectId!, // Asserting that projectId is not undefined
+    dataset: clientConfig.dataset!, // Asserting that dataset is not undefined
+  };
+
+  return ImageUrlBuilder(builderConfig).image(source);
 }

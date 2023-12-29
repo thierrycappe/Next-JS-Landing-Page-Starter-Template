@@ -1,9 +1,10 @@
-import { defineConfig } from 'sanity';
+import type { Config } from 'sanity';
+import { defineConfig } from 'sanity'; // Import Config type if available
 import { deskTool } from 'sanity/desk';
 
 import schemas from './sanity/schemas';
 
-const config = defineConfig({
+const config: Config = defineConfig({
   projectId: 'lpwbwc5b',
   dataset: 'production',
   title: 'localyon',
@@ -11,6 +12,7 @@ const config = defineConfig({
   basePath: '/admin',
   plugins: [deskTool()],
   schema: { types: schemas },
+  pluginOptions: {}, // Corrected key name
 });
 
 export default config;
