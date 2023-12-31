@@ -1,6 +1,6 @@
 export const AppConfig = {
-  site_name: 'Starter',
-  title: 'Nextjs Starter',
-  description: 'Starter code for your Nextjs Boilerplate with Tailwind CSS',
+  site_name: 'localyon.com',
+  title: 'localyon.com',
+  description: 'Location appartement et studio en résidence étudiante à Lyon',
   locale: 'fr',
 };

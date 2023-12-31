@@ -1,11 +1,11 @@
 import Link from 'next/link';
 
+import { Background } from '@/background/Background';
+import { Button } from '@/button/Button';
 import { HeroOneButton } from '@/components/hero/HeroOneButton';
 import { Section } from '@/components/layout/Section';
 import { NavbarTwoColumns } from '@/components/navigation/NavbarTwoColumns';
 
-import { Background } from '../background/Background';
-import { Button } from '../button/Button';
 import { Logo } from './Logo';
 
 const Hero = () => (
@@ -13,32 +13,38 @@ const Hero = () => (
     <Section yPadding="py-6">
       <NavbarTwoColumns logo={<Logo xl />}>
         <li>
-          <Link href="https://github.com/ixartz/Next-JS-Landing-Page-Starter-Template">
-            GitHub
-          </Link>
+          <Link href="/#features">Appartements</Link>
         </li>
         <li>
-          <Link href="/">Sign in</Link>
+          <Link href="/#localisation">Localisation</Link>
+        </li>
+        <li>
+          <Link href="/#pricing">Tarifs</Link>
+        </li>
+        <li>
+          <Link href="/#faq">FAQ</Link>
+        </li>
+        <li>
+          <Link href="/#contact">Contact</Link>
         </li>
       </NavbarTwoColumns>
     </Section>
-
-    <Section yPadding="pt-20 pb-32">
-      <HeroOneButton
-        title={
-          <>
-            {'The modern landing page for\n'}
-            <span className="text-primary-500">React developers</span>
-          </>
-        }
-        description="The easiest way to build a React landing page in seconds."
-        button={
-          <Link href="https://creativedesignsguru.com/category/nextjs/">
-            <Button xl>Download Your Free Theme</Button>
-          </Link>
-        }
-      />
-    </Section>
+    <HeroOneButton
+      title={
+        <>
+          {'Votre appartement meublé\n'}
+          <span className="text-primary-500">
+            En résidence étudiante à Lyon
+          </span>
+        </>
+      }
+      description="Votre studio meublé vous attend sur le campus INSA / La Doua."
+      button={
+        <Link href="https://creativedesignsguru.com/category/nextjs/">
+          <Button xl>Choisissez votre appartement</Button>
+        </Link>
+      }
+    />
   </Background>
 );
 
