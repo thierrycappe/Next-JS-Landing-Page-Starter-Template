@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import type { ReactNode } from 'react';
 
-import student from '@/public/assets/images/hero/smiling-student.webp';
+import student from '@/public/assets/images/hero/smiling-student.jpg';
 
 type IHeroOneButtonProps = {
   title: ReactNode;
@@ -15,8 +15,8 @@ const HeroOneButton = (props: IHeroOneButtonProps) => (
       <Image
         src={student}
         alt={'Etudiant souriant louant un appartement meublé à Lyon'}
-        height={500}
-        width={500}
+        height={400}
+        width={400}
         placeholder="blur"
         priority={true}
       />
