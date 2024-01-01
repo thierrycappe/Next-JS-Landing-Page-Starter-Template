@@ -3,27 +3,33 @@ import { Section } from '@/components/layout/Section';
 
 const VerticalFeatures = () => (
   <Section
-    title="Your title here"
-    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus malesuada nisi tellus, non imperdiet nisi tempor at."
+    title="Appartement T2 ou studio meublé"
+    description="Nos appartements sont meublés et équipés pour votre confort."
   >
     <VerticalFeatureRow
-      title="Your title here"
-      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse bibendum, nunc non posuere consectetur, justo erat semper enim, non hendrerit dui odio id enim."
-      image="/assets/images/feature.svg"
-      imageAlt="First feature alt text"
+      title="Grand studio meublé 24m2"
+      description={
+        "Totalement rénové, très bien équipé avec un coin cuisine séparé, ce grand studio meublé est très calme, idéal pour étudier. Ce studio que nous proposons est aménagé de manière pratique et douillette, avec des murs revêtus d'une peinture blanche éclatante. Vous y trouverez du mobilier ainsi que des équipements flambant neufs. Pour votre commodité, un micro-ondes et un assortiment complet de vaisselle sont inclus. De plus, de spacieux espaces de stockage sont à votre disposition.."
+      }
+      image="/assets/images/features/grand-studio.jpg"
+      imageAlt="grand studio meublé 24m2"
     />
     <VerticalFeatureRow
-      title="Your title here"
-      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse bibendum, nunc non posuere consectetur, justo erat semper enim, non hendrerit dui odio id enim."
-      image="/assets/images/feature2.svg"
-      imageAlt="Second feature alt text"
+      title="Studio meublé 20m2"
+      description={
+        "Tous nos studios sont meublés de façon fonctionnelle et confortable, ils sont peints en blanc et l'ensemble de l'ameublement et de l'équipement est neuf. Ils sont équipés d'un four micro-ondes et d'un nécessaire complet de vaisselle. Ils disposent également de grands rangements.."
+      }
+      image="/assets/images/features/studio.jpg"
+      imageAlt="Studio meublé 20m2"
       reverse
     />
     <VerticalFeatureRow
-      title="Your title here"
-      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse bibendum, nunc non posuere consectetur, justo erat semper enim, non hendrerit dui odio id enim."
-      image="/assets/images/feature3.svg"
-      imageAlt="Third feature alt text"
+      title="Appartement 2 pièces 43m2"
+      description={
+        "Nos appartements T2 sont meublés de façon fonctionnelle et confortable, ils sont peints en blanc et l'ensemble de l'ameublement et de l'équipement est neuf. Ils sont équipés d'un four micro-ondes et d'un nécessaire complet de vaisselle. Ils disposent également de grands rangements. Confortables pour deux étudiants, ils sont composés d'une chambre et d'un coin salon équipé d'un canapé-lit. espaces de stockage sont à votre disposition."
+      }
+      image="/assets/images/features/t2.jpg"
+      imageAlt="TAppartement 2 pièces 43m2"
     />
   </Section>
 );

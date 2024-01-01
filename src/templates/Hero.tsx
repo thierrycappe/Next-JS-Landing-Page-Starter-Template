@@ -28,23 +28,24 @@ const Hero = () => (
           <Link href="/#contact">Contact</Link>
         </li>
       </NavbarTwoColumns>
+
+      <HeroOneButton
+        title={
+          <>
+            {'Votre appartement meublé\n'}
+            <span className="text-primary-500">
+              En résidence étudiante à Lyon
+            </span>
+          </>
+        }
+        description="Sur le campus INSA / La Doua."
+        button={
+          <Link href="/#features">
+            <Button xl>Choisissez votre appartement</Button>
+          </Link>
+        }
+      />
     </Section>
-    <HeroOneButton
-      title={
-        <>
-          {'Votre appartement meublé\n'}
-          <span className="text-primary-500">
-            En résidence étudiante à Lyon
-          </span>
-        </>
-      }
-      description="Votre studio meublé vous attend sur le campus INSA / La Doua."
-      button={
-        <Link href="https://creativedesignsguru.com/category/nextjs/">
-          <Button xl>Choisissez votre appartement</Button>
-        </Link>
-      }
-    />
   </Background>
 );
 
